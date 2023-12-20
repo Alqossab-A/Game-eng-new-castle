@@ -21,11 +21,11 @@ int main() {
     cin >> y;
 
 
-    int a =x + y;
+    int a = x + y;
 
 
 
-    cout  << x << " + " << y << " = " <<a;
+    cout << x << " + " << y << " = " << a;
 
     return 0;
 }
