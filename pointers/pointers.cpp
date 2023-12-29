@@ -2,7 +2,23 @@
 
 using namespace std;
 
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 int main() {
+    int x = 10;
+    int y = 5;
+
+    cout << "value of x: " << x << " value of y: " << y << endl;
+
+    swap(&x, &y);
+
+    cout << "swapped: " << x << " " << y << endl;
+
+    /*
     int a = 100;
 
     cout << "Value in memory location a is " << a << endl;
@@ -35,6 +51,7 @@ int main() {
     int x;
     cout << "Type in a number to finish" << endl;
     cin >> x;
+    */
 
     return 0;
 }
