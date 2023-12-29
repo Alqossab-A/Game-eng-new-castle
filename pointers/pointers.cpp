@@ -7,8 +7,27 @@ void swap(int* a, int* b) {
     *a = *b;
     *b = temp;
 }
+                  
+void even(int* x) {
+    if (*x % 2 == 0) {
+        cout << *x << endl;
+    }
+    else {
+        cout << "not even" << endl;
+    }
+}
 
 int main() {
+    int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    int arrSize = sizeof(arr) / sizeof(arr[0]);
+    cout << sizeof(arr) << " : " << sizeof(arr[0]) << "size: " << arrSize << endl;
+
+    for (int i = 0; i < arrSize; i++) {
+        cout << "iteration: " << i << endl;
+        even(&arr[i]);
+    };
+
     int x = 10;
     int y = 5;
 
@@ -23,7 +42,7 @@ int main() {
 
     cout << "Value in memory location a is " << a << endl;
 
-    cout << "Adderss of (the reference to) memory location a is " << &a << endl;
+    cout << "Address of (the reference to) memory location a is " << &a << endl;
 
     int* b = &a;
 
